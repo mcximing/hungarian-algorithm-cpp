@@ -23,10 +23,6 @@ double HungarianAlgorithm::Solve(vector<vector<double>>& DistMatrix, vector<int>
 {
 	unsigned int nRows = DistMatrix.size();
 	unsigned int nCols = DistMatrix[0].size();
-	Assignment.clear();
-
-	if (nRows == 0 || nCols == 0)
-		return 0.0;
 
 	double *distMatrixIn = new double[nRows * nCols];
 	int *assignment = new int[nRows];
@@ -43,6 +39,7 @@ double HungarianAlgorithm::Solve(vector<vector<double>>& DistMatrix, vector<int>
 	// call solving function
 	assignmentoptimal(assignment, &cost, distMatrixIn, nRows, nCols);
 
+	Assignment.clear();
 	for (unsigned int r = 0; r < nRows; r++)
 		Assignment.push_back(assignment[r]);
 
