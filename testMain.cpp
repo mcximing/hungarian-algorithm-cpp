@@ -4,7 +4,8 @@
 
 int main(void)
 {
-	vector<vector<double>> costMatrix = { { 10, 19, 8, 15, 0 }, 
+    // please use "-std=c++11" for this initialization of vector.
+	vector< vector<double> > costMatrix = { { 10, 19, 8, 15, 0 }, 
 										  { 10, 18, 7, 17, 0 }, 
 										  { 13, 16, 9, 14, 0 }, 
 										  { 12, 19, 8, 18, 0 } };
