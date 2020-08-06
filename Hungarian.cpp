@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <cfloat> // for DBL_MAX
 #include <cmath>  // for fabs()
+#include <stdexcept>
 #include "Hungarian.h"
 
 
@@ -76,7 +77,7 @@ void HungarianAlgorithm::assignmentoptimal(int *assignment, double *cost, double
 	{
 		value = distMatrixIn[row];
 		if (value < 0)
-			cerr << "All matrix elements have to be non-negative." << endl;
+			throw std::runtime_error("All matrix elements have to be non-negative");
 		distMatrix[row] = value;
 	}
 
