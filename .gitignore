@@ -1,0 +1,25 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# CLion
+/.idea
+
+# VS and VSCode
+/.vs*
+/CMakeSettings.json
+/launch.vs.json
+
+# CMake buils
+/*build*/
+/out/
