@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Hungarian.h"
-
+using namespace std;
 
 int main(void)
 {

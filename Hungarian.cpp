@@ -14,6 +14,7 @@
 #include <cmath>  // for fabs()
 #include "Hungarian.h"
 
+using namespace std;
 
 HungarianAlgorithm::HungarianAlgorithm(){}
 HungarianAlgorithm::~HungarianAlgorithm(){}
